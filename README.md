@@ -1,9 +1,9 @@
 # AutoMineReset
 A timed reset for the MineReset plugin on PocketMine-MP!
 
-[![](https://poggit.pmmp.io/shield.state/AutoMineReset)](https://poggit.pmmp.io/p/AutoMineReset)
-[![](https://poggit.pmmp.io/shield.api/AutoMineReset)](https://poggit.pmmp.io/p/AutoMineReset)
-[![](https://poggit.pmmp.io/shield.dl.total/AutoMineReset)](https://poggit.pmmp.io/p/AutoMineReset)
+[![](https://poggit.pmmp.io/shield.state/AutoMineReset-Updated)](https://poggit.pmmp.io/p/AutoMineReset-Updated)
+[![](https://poggit.pmmp.io/shield.api/AutoMineReset-Updated)](https://poggit.pmmp.io/p/AutoMineReset-Updated)
+[![](https://poggit.pmmp.io/shield.dl.total/AutoMineReset-Updated)](https://poggit.pmmp.io/p/AutoMineReset-Updated)
 
 Thank you for the support!
 
