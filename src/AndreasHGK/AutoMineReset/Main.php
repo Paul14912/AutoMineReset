@@ -47,6 +47,14 @@ class Main extends PluginBase{
 	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
 		switch(strtolower($cmd->getName())){
 			case "mr";
+				if(isset($args[0])) {
+                    if($sender->hasPermission("minereset.command.reset")) {
+                        $this->getServer()->dispatchCommand($sender, "mines reset ".$args[0]);
+                        return true;
+                    }
+                    $sender->sendMessage(C::RED . "You do not have permission to reset mines!");
+                    return true;
+                }
 			if($sender->hasPermission("minereset.command.resetall")){
 				$this->resetAll();
 				return true;
@@ -99,11 +107,11 @@ class Main extends PluginBase{
 			}
 		}
 	public function resetAll(){
-		$command = "mine reset-all";
+		$command = "mines reset-all";
 		$this->getServer()->dispatchCommand(new ConsoleCommandSender(),$command);
 		
 		Server::getInstance()->broadcastMessage(C::BOLD.C::AQUA."»".C::RESET.C::DARK_AQUA." All mines have been reset!");
-		}
+        }
 	
 	
 	public function onDisable(){
