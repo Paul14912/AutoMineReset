@@ -107,7 +107,7 @@ class Main extends PluginBase{
 			}
 		}
 	public function resetAll(){
-		$command = "mines reset-all";
+		$command = "mine reset-all";
 		$this->getServer()->dispatchCommand(new ConsoleCommandSender(),$command);
 		
 		Server::getInstance()->broadcastMessage(C::BOLD.C::AQUA."»".C::RESET.C::DARK_AQUA." All mines have been reset!");
